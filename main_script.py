@@ -9,9 +9,9 @@ from strategy_models.go_left import go_left
 from Functions.update_strategy_posterior_probability import update_strategy_posterior_probability
 from Functions.Summaries_of_Beta_distribution import summaries_of_Beta_Distribution
 
-sys.path.append("/Users/lowripowell/Desktop/internship/python_coding/Functions")
-sys.path.append("/Users/lowripowell/Desktop/internship/python_coding/strategy_models")
-sys.path.append("/Users/lowripowell/Desktop/internship/python_coding/Processed Data")
+sys.path.append("/Functions")
+sys.path.append("/strategy_models")
+sys.path.append("/Processed Data")
 
 # add numpy so the Peyrache testdata can be loaded
 # initiate TestData variable so that rat 2 testdata can be loaded
