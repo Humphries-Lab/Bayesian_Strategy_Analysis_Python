@@ -1,0 +1,395 @@
+TrialIndex,SessionIndex,TargetRule,Choice,CuePosition,Reward,RuleChangeTrials,NewSessionTrials
+1,15,go right,left,right,no,0,0
+2,15,go right,left,right,no,0,0
+3,15,go right,right,right,yes,0,0
+4,15,go right,left,right,no,0,0
+5,15,go right,left,right,no,0,0
+6,15,go right,right,right,yes,0,0
+7,15,go right,right,right,yes,0,0
+8,15,go right,right,right,yes,0,0
+9,15,go right,right,right,yes,0,0
+10,16,go right,right,right,yes,0,1
+11,16,go right,left,right,no,0,0
+12,16,go right,right,left,yes,0,0
+13,16,go right,left,left,no,0,0
+14,16,go right,right,right,yes,0,0
+15,16,go right,right,right,yes,0,0
+16,16,go right,right,left,yes,0,0
+17,16,go right,right,left,yes,0,0
+18,16,go right,right,right,yes,0,0
+19,16,go right,right,right,yes,0,0
+20,16,go right,right,right,yes,0,0
+21,16,go right,right,left,yes,0,0
+22,16,go right,right,left,yes,0,0
+23,17,go to the lit arm,left,left,yes,1,1
+24,17,go to the lit arm,right,right,yes,0,0
+25,17,go to the lit arm,right,left,no,0,0
+26,17,go to the lit arm,right,right,yes,0,0
+27,17,go to the lit arm,right,right,yes,0,0
+28,17,go to the lit arm,right,right,yes,0,0
+29,17,go to the lit arm,right,left,no,0,0
+30,17,go to the lit arm,right,left,no,0,0
+31,17,go to the lit arm,right,right,yes,0,0
+32,17,go to the lit arm,right,left,no,0,0
+33,17,go to the lit arm,right,left,no,0,0
+34,17,go to the lit arm,left,right,no,0,0
+35,17,go to the lit arm,right,left,no,0,0
+36,17,go to the lit arm,left,left,yes,0,0
+37,17,go to the lit arm,right,right,yes,0,0
+38,17,go to the lit arm,right,right,yes,0,0
+39,17,go to the lit arm,left,right,no,0,0
+40,17,go to the lit arm,right,left,no,0,0
+41,17,go to the lit arm,right,right,yes,0,0
+42,17,go to the lit arm,right,left,no,0,0
+43,17,go to the lit arm,left,right,no,0,0
+44,17,go to the lit arm,right,left,no,0,0
+45,17,go to the lit arm,right,right,yes,0,0
+46,17,go to the lit arm,left,left,yes,0,0
+47,18,go to the lit arm,right,right,yes,0,1
+48,18,go to the lit arm,right,left,no,0,0
+49,18,go to the lit arm,left,left,yes,0,0
+50,18,go to the lit arm,right,left,no,0,0
+51,18,go to the lit arm,left,right,no,0,0
+52,18,go to the lit arm,right,right,yes,0,0
+53,18,go to the lit arm,left,left,yes,0,0
+54,18,go to the lit arm,right,right,yes,0,0
+55,18,go to the lit arm,left,right,no,0,0
+56,18,go to the lit arm,right,left,no,0,0
+57,18,go to the lit arm,left,left,yes,0,0
+58,18,go to the lit arm,right,left,no,0,0
+59,18,go to the lit arm,left,right,no,0,0
+60,18,go to the lit arm,right,right,yes,0,0
+61,18,go to the lit arm,right,right,yes,0,0
+62,18,go to the lit arm,left,right,no,0,0
+63,18,go to the lit arm,right,left,no,0,0
+64,18,go to the lit arm,right,right,yes,0,0
+65,18,go to the lit arm,left,left,yes,0,0
+66,18,go to the lit arm,right,left,no,0,0
+67,18,go to the lit arm,left,left,yes,0,0
+68,18,go to the lit arm,right,right,yes,0,0
+69,18,go to the lit arm,left,right,no,0,0
+70,18,go to the lit arm,right,left,no,0,0
+71,18,go to the lit arm,left,right,no,0,0
+72,18,go to the lit arm,right,left,no,0,0
+73,18,go to the lit arm,right,right,yes,0,0
+74,18,go to the lit arm,right,right,yes,0,0
+75,18,go to the lit arm,left,left,yes,0,0
+76,18,go to the lit arm,right,left,no,0,0
+77,18,go to the lit arm,left,right,no,0,0
+78,18,go to the lit arm,right,right,yes,0,0
+79,18,go to the lit arm,right,left,no,0,0
+80,18,go to the lit arm,right,left,no,0,0
+81,18,go to the lit arm,right,left,no,0,0
+82,18,go to the lit arm,left,right,no,0,0
+83,18,go to the lit arm,right,right,yes,0,0
+84,19,go to the lit arm,left,left,yes,0,1
+85,19,go to the lit arm,right,left,no,0,0
+86,19,go to the lit arm,left,left,yes,0,0
+87,19,go to the lit arm,right,right,yes,0,0
+88,19,go to the lit arm,left,right,no,0,0
+89,19,go to the lit arm,right,right,yes,0,0
+90,19,go to the lit arm,left,right,no,0,0
+91,19,go to the lit arm,right,left,no,0,0
+92,19,go to the lit arm,right,left,no,0,0
+93,19,go to the lit arm,left,left,yes,0,0
+94,19,go to the lit arm,right,right,yes,0,0
+95,19,go to the lit arm,left,right,no,0,0
+96,19,go to the lit arm,right,left,no,0,0
+97,19,go to the lit arm,right,right,yes,0,0
+98,19,go to the lit arm,left,left,yes,0,0
+99,19,go to the lit arm,right,right,yes,0,0
+100,19,go to the lit arm,right,left,no,0,0
+101,19,go to the lit arm,left,left,yes,0,0
+102,19,go to the lit arm,right,left,no,0,0
+103,19,go to the lit arm,right,right,yes,0,0
+104,19,go to the lit arm,right,right,yes,0,0
+105,19,go to the lit arm,right,left,no,0,0
+106,19,go to the lit arm,left,left,yes,0,0
+107,19,go to the lit arm,right,left,no,0,0
+108,19,go to the lit arm,right,right,yes,0,0
+109,19,go to the lit arm,left,left,yes,0,0
+110,19,go to the lit arm,right,left,no,0,0
+111,19,go to the lit arm,left,left,yes,0,0
+112,19,go to the lit arm,right,right,yes,0,0
+113,19,go to the lit arm,right,left,no,0,0
+114,19,go to the lit arm,left,right,no,0,0
+115,19,go to the lit arm,right,right,yes,0,0
+116,19,go to the lit arm,right,left,no,0,0
+117,19,go to the lit arm,right,left,no,0,0
+118,19,go to the lit arm,right,right,yes,0,0
+119,19,go to the lit arm,right,left,no,0,0
+120,19,go to the lit arm,left,right,no,0,0
+121,19,go to the lit arm,right,right,yes,0,0
+122,19,go to the lit arm,right,left,no,0,0
+123,19,go to the lit arm,right,left,no,0,0
+124,19,go to the lit arm,right,left,no,0,0
+125,19,go to the lit arm,left,left,yes,0,0
+126,20,go to the lit arm,right,right,yes,0,1
+127,20,go to the lit arm,left,right,no,0,0
+128,20,go to the lit arm,right,right,yes,0,0
+129,20,go to the lit arm,left,left,yes,0,0
+130,20,go to the lit arm,right,left,no,0,0
+131,20,go to the lit arm,left,right,no,0,0
+132,20,go to the lit arm,right,left,no,0,0
+133,20,go to the lit arm,right,right,yes,0,0
+134,20,go to the lit arm,left,left,yes,0,0
+135,20,go to the lit arm,right,left,no,0,0
+136,20,go to the lit arm,left,left,yes,0,0
+137,20,go to the lit arm,right,right,yes,0,0
+138,20,go to the lit arm,left,right,no,0,0
+139,20,go to the lit arm,right,left,no,0,0
+140,20,go to the lit arm,left,right,no,0,0
+141,20,go to the lit arm,right,right,yes,0,0
+142,20,go to the lit arm,left,left,yes,0,0
+143,20,go to the lit arm,right,left,no,0,0
+144,20,go to the lit arm,right,right,yes,0,0
+145,20,go to the lit arm,left,left,yes,0,0
+146,20,go to the lit arm,right,right,yes,0,0
+147,20,go to the lit arm,right,left,no,0,0
+148,20,go to the lit arm,left,left,yes,0,0
+149,20,go to the lit arm,right,right,yes,0,0
+150,20,go to the lit arm,left,right,no,0,0
+151,20,go to the lit arm,right,right,yes,0,0
+152,20,go to the lit arm,right,right,yes,0,0
+153,21,go to the lit arm,right,right,yes,0,1
+154,21,go to the lit arm,left,right,no,0,0
+155,21,go to the lit arm,right,left,no,0,0
+156,21,go to the lit arm,right,right,yes,0,0
+157,21,go to the lit arm,left,left,yes,0,0
+158,21,go to the lit arm,right,right,yes,0,0
+159,21,go to the lit arm,left,right,no,0,0
+160,21,go to the lit arm,left,left,yes,0,0
+161,21,go to the lit arm,right,left,no,0,0
+162,21,go to the lit arm,left,left,yes,0,0
+163,21,go to the lit arm,right,right,yes,0,0
+164,21,go to the lit arm,right,right,yes,0,0
+165,21,go to the lit arm,left,left,yes,0,0
+166,21,go to the lit arm,right,right,yes,0,0
+167,21,go to the lit arm,left,left,yes,0,0
+168,21,go to the lit arm,right,left,no,0,0
+169,21,go to the lit arm,right,right,yes,0,0
+170,21,go to the lit arm,left,left,yes,0,0
+171,21,go to the lit arm,right,right,yes,0,0
+172,21,go to the lit arm,left,left,yes,0,0
+173,21,go to the lit arm,right,right,yes,0,0
+174,21,go to the lit arm,left,left,yes,0,0
+175,21,go to the lit arm,left,left,yes,0,0
+176,21,go to the lit arm,right,right,yes,0,0
+177,21,go to the lit arm,right,right,yes,0,0
+178,21,go to the lit arm,right,right,yes,0,0
+179,21,go to the lit arm,left,left,yes,0,0
+180,21,go to the lit arm,right,right,yes,0,0
+181,21,go to the lit arm,left,left,yes,0,0
+182,22,go to the lit arm,left,left,yes,0,1
+183,22,go to the lit arm,right,left,no,0,0
+184,22,go to the lit arm,left,left,yes,0,0
+185,22,go to the lit arm,right,right,yes,0,0
+186,22,go to the lit arm,right,right,yes,0,0
+187,22,go to the lit arm,right,right,yes,0,0
+188,22,go to the lit arm,right,right,yes,0,0
+189,22,go to the lit arm,left,left,yes,0,0
+190,22,go to the lit arm,right,left,no,0,0
+191,22,go to the lit arm,right,right,yes,0,0
+192,22,go to the lit arm,left,left,yes,0,0
+193,22,go to the lit arm,right,right,yes,0,0
+194,22,go to the lit arm,left,left,yes,0,0
+195,22,go to the lit arm,left,left,yes,0,0
+196,22,go to the lit arm,right,right,yes,0,0
+197,22,go to the lit arm,right,right,yes,0,0
+198,22,go to the lit arm,left,left,yes,0,0
+199,22,go to the lit arm,right,left,no,0,0
+200,22,go to the lit arm,right,right,yes,0,0
+201,22,go to the lit arm,left,left,yes,0,0
+202,22,go to the lit arm,right,right,yes,0,0
+203,22,go to the lit arm,left,left,yes,0,0
+204,22,go to the lit arm,right,left,no,0,0
+205,22,go to the lit arm,right,right,yes,0,0
+206,22,go to the lit arm,right,right,yes,0,0
+207,22,go to the lit arm,left,left,yes,0,0
+208,22,go to the lit arm,right,left,no,0,0
+209,22,go to the lit arm,right,right,yes,0,0
+210,22,go to the lit arm,right,right,yes,0,0
+211,22,go to the lit arm,left,left,yes,0,0
+212,23,go to the lit arm,left,left,yes,0,1
+213,23,go to the lit arm,right,right,yes,0,0
+214,23,go to the lit arm,right,right,yes,0,0
+215,23,go to the lit arm,left,left,yes,0,0
+216,23,go to the lit arm,right,right,yes,0,0
+217,23,go to the lit arm,left,left,yes,0,0
+218,23,go to the lit arm,right,right,yes,0,0
+219,23,go to the lit arm,left,left,yes,0,0
+220,23,go to the lit arm,left,left,yes,0,0
+221,23,go to the lit arm,left,left,yes,0,0
+222,23,go left,right,right,no,1,0
+223,23,go left,right,right,no,0,0
+224,23,go left,right,right,no,0,0
+225,23,go left,left,left,yes,0,0
+226,23,go left,left,left,yes,0,0
+227,23,go left,right,right,no,0,0
+228,23,go left,left,left,yes,0,0
+229,23,go left,right,right,no,0,0
+230,23,go left,left,left,yes,0,0
+231,23,go left,right,right,no,0,0
+232,23,go left,left,left,yes,0,0
+233,23,go left,right,right,no,0,0
+234,23,go left,left,right,yes,0,0
+235,23,go left,left,left,yes,0,0
+236,23,go left,left,left,yes,0,0
+237,23,go left,right,right,no,0,0
+238,23,go left,left,left,yes,0,0
+239,23,go left,left,right,yes,0,0
+240,23,go left,left,right,yes,0,0
+241,23,go left,left,right,yes,0,0
+242,23,go left,left,left,yes,0,0
+243,23,go left,left,left,yes,0,0
+244,23,go left,right,right,no,0,0
+245,23,go left,left,left,yes,0,0
+246,23,go left,left,left,yes,0,0
+247,24,go left,left,right,yes,0,1
+248,24,go left,left,left,yes,0,0
+249,24,go left,left,right,yes,0,0
+250,24,go left,left,left,yes,0,0
+251,24,go left,left,right,yes,0,0
+252,24,go left,left,left,yes,0,0
+253,24,go left,left,left,yes,0,0
+254,24,go left,left,left,yes,0,0
+255,24,go left,left,right,yes,0,0
+256,24,go left,left,right,yes,0,0
+257,24,go left,left,left,yes,0,0
+258,24,go left,right,right,no,0,0
+259,24,go left,left,right,yes,0,0
+260,24,go left,left,left,yes,0,0
+261,24,go left,left,left,yes,0,0
+262,24,go left,right,right,no,0,0
+263,24,go left,left,left,yes,0,0
+264,24,go left,left,right,yes,0,0
+265,24,go left,left,left,yes,0,0
+266,24,go left,left,left,yes,0,0
+267,25,go left,left,right,yes,0,1
+268,25,go left,left,left,yes,0,0
+269,25,go left,left,left,yes,0,0
+270,25,go left,left,left,yes,0,0
+271,25,go left,left,left,yes,0,0
+272,25,go left,left,left,yes,0,0
+273,25,go left,right,right,no,0,0
+274,25,go left,left,left,yes,0,0
+275,25,go left,left,right,yes,0,0
+276,25,go left,left,left,yes,0,0
+277,25,go to the dark arm,left,left,no,1,0
+278,25,go to the dark arm,right,right,no,0,0
+279,25,go to the dark arm,left,right,yes,0,0
+280,25,go to the dark arm,left,left,no,0,0
+281,25,go to the dark arm,left,right,yes,0,0
+282,25,go to the dark arm,left,left,no,0,0
+283,25,go to the dark arm,left,right,yes,0,0
+284,25,go to the dark arm,left,left,no,0,0
+285,25,go to the dark arm,left,right,yes,0,0
+286,25,go to the dark arm,left,right,yes,0,0
+287,25,go to the dark arm,left,left,no,0,0
+288,25,go to the dark arm,left,left,no,0,0
+289,25,go to the dark arm,left,right,yes,0,0
+290,25,go to the dark arm,left,left,no,0,0
+291,25,go to the dark arm,left,left,no,0,0
+292,25,go to the dark arm,left,right,yes,0,0
+293,25,go to the dark arm,left,left,no,0,0
+294,25,go to the dark arm,left,left,no,0,0
+295,25,go to the dark arm,left,right,yes,0,0
+296,25,go to the dark arm,left,right,yes,0,0
+297,25,go to the dark arm,left,right,yes,0,0
+298,25,go to the dark arm,left,left,no,0,0
+299,25,go to the dark arm,left,left,no,0,0
+300,25,go to the dark arm,left,right,yes,0,0
+301,26,go to the dark arm,left,right,yes,0,1
+302,26,go to the dark arm,left,left,no,0,0
+303,26,go to the dark arm,left,right,yes,0,0
+304,26,go to the dark arm,right,right,no,0,0
+305,26,go to the dark arm,left,right,yes,0,0
+306,26,go to the dark arm,left,right,yes,0,0
+307,26,go to the dark arm,left,left,no,0,0
+308,26,go to the dark arm,left,left,no,0,0
+309,26,go to the dark arm,left,right,yes,0,0
+310,26,go to the dark arm,left,left,no,0,0
+311,26,go to the dark arm,left,right,yes,0,0
+312,26,go to the dark arm,left,left,no,0,0
+313,26,go to the dark arm,left,left,no,0,0
+314,26,go to the dark arm,left,left,no,0,0
+315,26,go to the dark arm,left,right,yes,0,0
+316,26,go to the dark arm,left,right,yes,0,0
+317,26,go to the dark arm,left,left,no,0,0
+318,26,go to the dark arm,left,right,yes,0,0
+319,26,go to the dark arm,left,right,yes,0,0
+320,26,go to the dark arm,left,left,no,0,0
+321,26,go to the dark arm,left,left,no,0,0
+322,26,go to the dark arm,left,right,yes,0,0
+323,26,go to the dark arm,left,right,yes,0,0
+324,26,go to the dark arm,left,left,no,0,0
+325,26,go to the dark arm,left,left,no,0,0
+326,26,go to the dark arm,left,right,yes,0,0
+327,26,go to the dark arm,left,right,yes,0,0
+328,26,go to the dark arm,left,right,yes,0,0
+329,26,go to the dark arm,left,right,yes,0,0
+330,26,go to the dark arm,left,left,no,0,0
+331,26,go to the dark arm,left,left,no,0,0
+332,26,go to the dark arm,left,right,yes,0,0
+333,26,go to the dark arm,left,left,no,0,0
+334,26,go to the dark arm,left,right,yes,0,0
+335,27,go to the dark arm,left,right,yes,0,1
+336,27,go to the dark arm,left,left,no,0,0
+337,27,go to the dark arm,left,right,yes,0,0
+338,27,go to the dark arm,left,left,no,0,0
+339,27,go to the dark arm,left,left,no,0,0
+340,27,go to the dark arm,left,right,yes,0,0
+341,27,go to the dark arm,left,left,no,0,0
+342,27,go to the dark arm,left,right,yes,0,0
+343,27,go to the dark arm,left,right,yes,0,0
+344,27,go to the dark arm,left,left,no,0,0
+345,27,go to the dark arm,left,right,yes,0,0
+346,27,go to the dark arm,left,right,yes,0,0
+347,27,go to the dark arm,left,left,no,0,0
+348,27,go to the dark arm,left,left,no,0,0
+349,27,go to the dark arm,left,left,no,0,0
+350,27,go to the dark arm,left,right,yes,0,0
+351,27,go to the dark arm,left,left,no,0,0
+352,27,go to the dark arm,left,right,yes,0,0
+353,27,go to the dark arm,left,right,yes,0,0
+354,27,go to the dark arm,left,left,no,0,0
+355,27,go to the dark arm,left,left,no,0,0
+356,27,go to the dark arm,left,right,yes,0,0
+357,27,go to the dark arm,left,right,yes,0,0
+358,27,go to the dark arm,left,right,yes,0,0
+359,27,go to the dark arm,left,left,no,0,0
+360,27,go to the dark arm,left,right,yes,0,0
+361,27,go to the dark arm,left,left,no,0,0
+362,27,go to the dark arm,left,right,yes,0,0
+363,27,go to the dark arm,left,left,no,0,0
+364,27,go to the dark arm,left,left,no,0,0
+365,27,go to the dark arm,left,right,yes,0,0
+366,27,go to the dark arm,left,right,yes,0,0
+367,27,go to the dark arm,left,right,yes,0,0
+368,27,go to the dark arm,left,right,yes,0,0
+369,27,go to the dark arm,left,left,no,0,0
+370,27,go to the dark arm,left,left,no,0,0
+371,27,go to the dark arm,left,left,no,0,0
+372,27,go to the dark arm,left,right,yes,0,0
+373,28,go to the dark arm,left,right,yes,0,1
+374,28,go to the dark arm,left,right,yes,0,0
+375,28,go to the dark arm,left,right,yes,0,0
+376,28,go to the dark arm,left,left,no,0,0
+377,28,go to the dark arm,left,left,no,0,0
+378,28,go to the dark arm,left,left,no,0,0
+379,28,go to the dark arm,left,right,yes,0,0
+380,28,go to the dark arm,left,right,yes,0,0
+381,28,go to the dark arm,left,right,yes,0,0
+382,28,go to the dark arm,left,left,no,0,0
+383,28,go to the dark arm,left,right,yes,0,0
+384,28,go to the dark arm,left,left,no,0,0
+385,28,go to the dark arm,left,left,no,0,0
+386,28,go to the dark arm,left,right,yes,0,0
+387,28,go to the dark arm,left,left,no,0,0
+388,28,go to the dark arm,left,right,yes,0,0
+389,28,go to the dark arm,left,left,no,0,0
+390,28,go to the dark arm,left,left,no,0,0
+391,28,go to the dark arm,left,right,yes,0,0
+392,28,go to the dark arm,left,right,yes,0,0
+393,28,go to the dark arm,left,right,yes,0,0
+394,28,go to the dark arm,left,left,no,0,0
