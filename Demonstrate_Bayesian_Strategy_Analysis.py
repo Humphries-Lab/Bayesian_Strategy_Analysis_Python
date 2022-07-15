@@ -76,5 +76,5 @@ plt.text(11, 1.125, "1", label = 'Go to the Right')
 plt.text(143.5, 1.125, "2", label = 'Go to the Lit Arm')
 plt.text(248.5, 1.125, "3", label = 'Go to the Left')
 plt.text(335, 1.125, "4", label = 'Go to the Dark Arm')
-plt.legend(handles = text)  # add legend
+plt.legend()  # add legend
 plt.show()
