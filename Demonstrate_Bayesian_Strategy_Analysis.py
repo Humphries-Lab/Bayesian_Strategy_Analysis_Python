@@ -5,7 +5,6 @@ import sys
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import itertools
 from Functions.set_Beta_prior import set_priors
 from strategy_models.go_left import go_left
 from Functions.update_strategy_posterior_probability import update_strategy_posterior_probability
@@ -54,7 +53,7 @@ Output.columns = ['Alpha', 'Beta', 'MAPprobability', 'Precision']
 Output.to_csv('Output.csv', index=False, )  # creates a csv of the output of Alpha, Beta, MAPprobabitlity and Precision
 
 # plotting time series of MAPprobability
-plt.figure(figsize=(10,5))
+plt.figure(figsize=(10, 5))
 plt.plot(Output.MAPprobability, linewidth=0.75)  # plots the time series
 plt.axis([0, no_Trials, 0, 1.25])  # establishes axis limits
 plt.xlabel('Trials'), plt.ylabel('P(Strategy)')  # labelling the axis
@@ -68,13 +67,13 @@ ruleLines = np.insert(ruleLines, 0, 0)  # sets array for x values of rule change
 
 for x in ruleLines:  # to get shade change for rule change and labels
     minx = x / no_Trials
-    plt.axhspan(1, 1.25, xmin=minx, alpha=0.3, edgecolor = 'k')  # change transparency for separation
+    plt.axhspan(1, 1.25, xmin=minx, alpha=0.3, edgecolor='k')  # change transparency for separation
     plt.axvline(x, 0.8, 1)  # dividing lines
 
 #  creating labels
-plt.text(11, 1.125, "1", label = 'Go to the Right')
-plt.text(143.5, 1.125, "2", label = 'Go to the Lit Arm')
-plt.text(248.5, 1.125, "3", label = 'Go to the Left')
-plt.text(335, 1.125, "4", label = 'Go to the Dark Arm')
+plt.text(11, 1.125, "1", label='Go to the Right')
+plt.text(143.5, 1.125, "2", label='Go to the Lit Arm')
+plt.text(248.5, 1.125, "3", label='Go to the Left')
+plt.text(335, 1.125, "4", label='Go to the Dark Arm')
 plt.legend()  # add legend
 plt.show()
