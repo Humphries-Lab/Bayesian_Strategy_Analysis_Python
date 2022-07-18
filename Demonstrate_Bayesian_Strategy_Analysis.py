@@ -71,9 +71,9 @@ for x in ruleLines:  # to get shade change for rule change and labels
     plt.axvline(x, 0.8, 1)  # dividing lines
 
 #  creating labels
-plt.text(11, 1.125, "1", label='Go to the Right')
-plt.text(143.5, 1.125, "2", label='Go to the Lit Arm')
-plt.text(248.5, 1.125, "3", label='Go to the Left')
-plt.text(335, 1.125, "4", label='Go to the Dark Arm')
+plt.text(1, 1.125, "Right Arm", label='Go to the Right')
+plt.text(120, 1.125, "Lit Arm", label='Go to the Lit Arm')
+plt.text(225, 1.125, "Left Arm", label='Go to the Left')
+plt.text(330, 1.125, "Unlit Arm", label='Go to the Dark Arm')
 plt.legend()  # add legend
 plt.show()
