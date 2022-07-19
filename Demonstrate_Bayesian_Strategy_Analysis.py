@@ -1,7 +1,6 @@
 # starter script to demonstrate the Bayesian strategy analysis
 #  a singular strategy called go_left
 # uses testdata from Rat 2 in Peyrache Y-maze testdata-set
-import sys
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -9,10 +8,6 @@ from Functions.set_Beta_prior import set_priors
 from strategy_models.go_left import go_left
 from Functions.update_strategy_posterior_probability import update_strategy_posterior_probability
 from Functions.Summaries_of_Beta_distribution import summaries_of_Beta_Distribution
-
-sys.path.append("/Functions")
-sys.path.append("/strategy_models")
-sys.path.append("/Processed Data")
 
 # initiate TestData variable so that rat 2 testdata can be loaded
 TestData = pd.read_csv('data.csv')
@@ -75,5 +70,6 @@ plt.text(1, 1.125, "Right Arm", label='Go to the Right')
 plt.text(120, 1.125, "Lit Arm", label='Go to the Lit Arm')
 plt.text(225, 1.125, "Left Arm", label='Go to the Left')
 plt.text(330, 1.125, "Unlit Arm", label='Go to the Dark Arm')
+plt.text(150, 1.3, "Rule for Reward")
 plt.legend()  # add legend
 plt.show()

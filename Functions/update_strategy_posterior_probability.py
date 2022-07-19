@@ -1,5 +1,3 @@
-global trial_type
-
 
 def update_strategy_posterior_probability(trial_type, decay_rate, success_total, failure_total, alpha0, beta0):
     if trial_type == "success":

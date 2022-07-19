@@ -1,9 +1,6 @@
 # set requested prior parameters for Beta distributions
 # [A,B]= SET_BETA_PRIOR(P) sets the Beta distribution to the specified prior
 # in P: 'Uniform'; 'Jeffreys'
-global beta0, alpha0
-
-
 def set_priors(prior_type):
     if prior_type == 'Uniform':
         alpha0 = 1
