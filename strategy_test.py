@@ -32,7 +32,7 @@ failure_total = 0
 Output = pd.DataFrame()  # empty Dataframe to input data into
 
 for rows in TestData.itertuples():
-    TestData.apply(go_right(TestData))
+    (go_right(TestData))
     print(trial_type)
 
 

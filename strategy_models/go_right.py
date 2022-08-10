@@ -8,7 +8,7 @@ import pandas as pd
 
 
 def go_right(TestData):
-    if [TestData.Choice] == "left":
+    if TestData.Choice == "right":
         trial_type = "success"
     else:
         trial_type = "failure"

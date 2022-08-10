@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe830a03-834a-493e-8338-b94da31d706d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Replicate_Figure1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy_models/go_cued.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy_models/go_right.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy_models/go_uncued.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy_models/lose_shift_cued.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy_models/lose_shift_spatial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy_models/sticky.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy_models/win_stayed_cued.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy_models/win_stayed_spatial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strategy_models/alternate.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategy_models/alternate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strategy_models/go_left.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategy_models/go_left.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strategy_models/go_right" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Replicate_Figure1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Replicate_Figure1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategy_models/go_right.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategy_models/go_right.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategy_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +35,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.go_right">
+  <component name="RunManager" selected="Python.strategy_test">
     <configuration name="Demonstrate_Bayesian_Strategy_Analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bayesian_Strategy_Analyisis_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,9 +143,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.strategy_test" />
         <item itemvalue="Python.go_right" />
         <item itemvalue="Python.Replicate_Figure1" />
-        <item itemvalue="Python.strategy_test" />
         <item itemvalue="Python.alternate" />
         <item itemvalue="Python.Demonstrate_Bayesian_Strategy_Analysis" />
       </list>
