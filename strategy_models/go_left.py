@@ -3,8 +3,6 @@
 # returns the TYPE ("success", 'failure')
 
 # Checks only the current trial
-global trial_type
-
 
 def go_left(rows):
     if rows == "left":

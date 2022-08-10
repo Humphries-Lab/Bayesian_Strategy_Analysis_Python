@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe830a03-834a-493e-8338-b94da31d706d" name="Changes" comment="" />
+    <list default="true" id="fe830a03-834a-493e-8338-b94da31d706d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Replicate_Figure1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy_models/go_cued.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy_models/go_right.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy_models/go_uncued.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy_models/lose_shift_cued.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy_models/lose_shift_spatial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy_models/sticky.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy_models/win_stayed_cued.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy_models/win_stayed_spatial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategy_models/alternate.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategy_models/alternate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategy_models/go_left.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategy_models/go_left.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategy_models/go_right" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,7 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.Demonstrate_Bayesian_Strategy_Analysis">
+  <component name="RunManager" selected="Python.go_right">
     <configuration name="Demonstrate_Bayesian_Strategy_Analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bayesian_Strategy_Analyisis_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -45,7 +67,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Summaries_of_Beta_distribution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Replicate_Figure1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bayesian_Strategy_Analyisis_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,11 +75,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Functions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions/Summaries_of_Beta_distribution.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Replicate_Figure1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -66,7 +88,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="set_Beta_prior" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="alternate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Bayesian_Strategy_Analyisis_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,11 +96,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Functions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/strategy_models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions/set_Beta_prior.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/strategy_models/alternate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go_right" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Bayesian_Strategy_Analyisis_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/strategy_models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/strategy_models/go_right.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="strategy_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Bayesian_Strategy_Analyisis_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/strategy_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -89,9 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.go_right" />
+        <item itemvalue="Python.Replicate_Figure1" />
+        <item itemvalue="Python.strategy_test" />
+        <item itemvalue="Python.alternate" />
         <item itemvalue="Python.Demonstrate_Bayesian_Strategy_Analysis" />
-        <item itemvalue="Python.Summaries_of_Beta_distribution" />
-        <item itemvalue="Python.set_Beta_prior" />
       </list>
     </recent_temporary>
   </component>
@@ -105,5 +171,16 @@
       <updated>1657850147169</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
