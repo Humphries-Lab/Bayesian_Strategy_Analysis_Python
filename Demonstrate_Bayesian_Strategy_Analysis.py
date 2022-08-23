@@ -22,29 +22,31 @@ decay_rate = 0.9  # Set Decay rate (gamma)
 
 no_Trials = np.size(TestData.TrialIndex)
 
-Alpha = np.zeros(no_Trials)  # initialises storage
-Beta = Alpha
-MAPprobability = np.zeros((no_Trials, 1))
-precision = MAPprobability
+Alpha = 0   # initialises storage
+Beta = 0 
+MAPprobability = 0 
+precision = 0
 
 success_total = 0  # initialise variables to zero
 failure_total = 0
 
-Output = pd.DataFrame()  # empty Dataframe to input data into
+Output = pd.DataFrame(columns = ['Alpha', 'Beta', 'MAPprobability', 'Precision'])  # empty Dataframe to input data into
 
-for rows in TestData.Choice:
-    trial_type = go_left(rows)
-
+#%% run strategy analysis
+for trial in range(len(TestData)):
+    rows_of_data = TestData.iloc[0:trial+1]     # select all rows of data up to the curren trial; is trial+1 as dataframe includes column row as row 0????
+    trial_type = go_left(rows_of_data)              
+        
     [success_total, failure_total, Alpha, Beta] = update_strategy_posterior_probability(trial_type, decay_rate,
                                                                                         success_total, failure_total,
                                                                                         alpha0, beta0)
     MAPprobability = summaries_of_Beta_Distribution(Alpha, Beta, 'MAP')
     precision = summaries_of_Beta_Distribution(Alpha, Beta, 'precision')
-    loop = pd.DataFrame([Alpha, Beta, MAPprobability, precision], )
-    Output = pd.concat([Output, loop], axis=1, ignore_index=True)
-Output = Output.T
-Output.columns = ['Alpha', 'Beta', 'MAPprobability', 'Precision']
+    new_row = {'Alpha':Alpha, 'Beta':Beta, 'MAPprobability':MAPprobability, 'Precision':precision}     # create new row for dataframe as a dict
+    new_df= pd.DataFrame([new_row])   # have to convert to dataframe to use concat!!
+    Output = pd.concat([Output, new_df], ignore_index=True)       # add new row to dataframe
 
+# save output    
 Output.to_csv('Output.csv', index=False, )  # creates a csv of the output of Alpha, Beta, MAPprobabitlity and Precision
 
 # plotting time series of MAPprobability

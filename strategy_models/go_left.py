@@ -5,8 +5,11 @@
 # Checks only the current trial
 
 def go_left(rows):
-    if rows == "left":
+
+    nTrials = len(rows);
+     # "at" selects the value at the row/column location in the dataframe
+    if rows.at[nTrials-1,'Choice'] == "left":      # check the current trial's choice
         trial_type = "success"
-    elif rows == "right":
+    elif rows.at[nTrials-1,'Choice'] == "right":
         trial_type = "failure"
     return trial_type
