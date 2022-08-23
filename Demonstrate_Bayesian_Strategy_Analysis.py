@@ -35,13 +35,15 @@ Output = pd.DataFrame(columns = ['Alpha', 'Beta', 'MAPprobability', 'Precision']
 #%% run strategy analysis
 for trial in range(len(TestData)):
     rows_of_data = TestData.iloc[0:trial+1]     # select all rows of data up to the curren trial; is trial+1 as dataframe includes column row as row 0????
-    trial_type = go_left(rows_of_data)              
+    trial_type = go_left(rows_of_data)          # test whether go-left was used       
         
     [success_total, failure_total, Alpha, Beta] = update_strategy_posterior_probability(trial_type, decay_rate,
                                                                                         success_total, failure_total,
                                                                                         alpha0, beta0)
     MAPprobability = summaries_of_Beta_Distribution(Alpha, Beta, 'MAP')
     precision = summaries_of_Beta_Distribution(Alpha, Beta, 'precision')
+    
+    #store output of analysis on this trial
     new_row = {'Alpha':Alpha, 'Beta':Beta, 'MAPprobability':MAPprobability, 'Precision':precision}     # create new row for dataframe as a dict
     new_df= pd.DataFrame([new_row])   # have to convert to dataframe to use concat!!
     Output = pd.concat([Output, new_df], ignore_index=True)       # add new row to dataframe
