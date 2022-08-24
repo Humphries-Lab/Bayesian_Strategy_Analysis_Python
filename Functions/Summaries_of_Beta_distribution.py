@@ -4,7 +4,7 @@ from scipy.stats import beta
 
 def summaries_of_Beta_Distribution(Alpha, Beta, stat_type, *args):
     if np.isnan(Alpha) or np.isnan(Beta):
-        statistic = None
+        statistic = np.nan
     else:
         if stat_type == 'MAP':
             x = np.arange(0, 1, 0.001)

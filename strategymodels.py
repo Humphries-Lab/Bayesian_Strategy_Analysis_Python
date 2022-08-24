@@ -84,7 +84,7 @@ def alternate(rows):
     # checks if the subject made a different choice on this trial from the previous obe
     nTrials = len(rows)
      # "at" selects the value at the row/column location in the dataframe
-    if nTrials > 1 & rows.at[nTrials-1,'Choice'] != rows.at[nTrials-2,'Choice']:      # check the current trial's choice
+    if nTrials > 1 and rows.at[nTrials-1,'Choice'] != rows.at[nTrials-2,'Choice']:      # check the current trial's choice
         trial_type = "success"
     else:
         trial_type = "failure"
@@ -99,11 +99,11 @@ def lose_shift_cued(rows):
     nTrials = len(rows)
      # "at" selects the value at the row/column location in the dataframe
      # check that the previous trial was not rewarded ('lose')
-    if nTrials > 1 & rows.at[nTrials-2,'Reward'] == "no":   
+    if nTrials > 1 and rows.at[nTrials-2,'Reward'] == "no":   
         # now check if the subject shifted their cued-based choice
-        if rows.at[nTrials-2,'Choice'] == rows.at[nTrials-2,'CuePosition'] & rows.at[nTrials-1,'Choice'] != rows.at[nTrials-1,'CuePosition']:
+        if rows.at[nTrials-2,'Choice'] == rows.at[nTrials-2,'CuePosition'] and rows.at[nTrials-1,'Choice'] != rows.at[nTrials-1,'CuePosition']:
             trial_type = "success"  # shifted from cued to uncued choice
-        elif rows.at[nTrials-2,'Choice'] != rows.at[nTrials-2,'CuePosition'] & rows.at[nTrials-1,'Choice'] == rows.at[nTrials-1,'CuePosition']:
+        elif rows.at[nTrials-2,'Choice'] != rows.at[nTrials-2,'CuePosition'] and rows.at[nTrials-1,'Choice'] == rows.at[nTrials-1,'CuePosition']:
             trial_type = "success" # shifted from uncued to cued chpice
         else:
             trial_type = "failure"
@@ -119,7 +119,7 @@ def lose_shift_spatial(rows):
     nTrials = len(rows)
      # "at" selects the value at the row/column location in the dataframe
      # check that the previous trial was not rewarded ('lose')
-    if nTrials > 1 & rows.at[nTrials-2,'Reward'] == "no":   
+    if nTrials > 1 and rows.at[nTrials-2,'Reward'] == "no":   
         # now check if the subject shifted their spatial choice
         if rows.at[nTrials-1,'Choice'] != rows.at[nTrials-2,'Choice']: 
             trial_type = "success"
@@ -134,7 +134,7 @@ def sticky(rows):
     # checks if the subject made the same choice on this trial as the previous one
     nTrials = len(rows)
      # "at" selects the value at the row/column location in the dataframe
-    if nTrials > 1 & rows.at[nTrials-1,'Choice'] == rows.at[nTrials-2,'Choice']:      # check the current trial's choice
+    if nTrials > 1 and rows.at[nTrials-1,'Choice'] == rows.at[nTrials-2,'Choice']:      # check the current trial's choice
         trial_type = "success"
     else:
         trial_type = "failure"
@@ -149,11 +149,11 @@ def win_stay_cued(rows):
     nTrials = len(rows)
      # "at" selects the value at the row/column location in the dataframe
      # check that the previous trial was rewarded ('win')
-    if nTrials > 1 & rows.at[nTrials-2,'Reward'] == "yes":   
+    if nTrials > 1 and rows.at[nTrials-2,'Reward'] == "yes":   
         # now check if the subject stayed with the cued-based choice
-        if rows.at[nTrials-2,'Choice'] == rows.at[nTrials-2,'CuePosition'] & rows.at[nTrials-1,'Choice'] == rows.at[nTrials-1,'CuePosition']:
+        if rows.at[nTrials-2,'Choice'] == rows.at[nTrials-2,'CuePosition'] and rows.at[nTrials-1,'Choice'] == rows.at[nTrials-1,'CuePosition']:
             trial_type = "success"  # made the same cued choice
-        elif rows.at[nTrials-2,'Choice'] != rows.at[nTrials-2,'CuePosition'] & rows.at[nTrials-1,'Choice'] != rows.at[nTrials-1,'CuePosition']:
+        elif rows.at[nTrials-2,'Choice'] != rows.at[nTrials-2,'CuePosition'] and rows.at[nTrials-1,'Choice'] != rows.at[nTrials-1,'CuePosition']:
             trial_type = "success" # made the same uncued choice
         else:
             trial_type = "failure"
@@ -169,7 +169,7 @@ def win_stay_spatial(rows):
     nTrials = len(rows)
      # "at" selects the value at the row/column location in the dataframe
      # check that the previous trial was rewarded ('win')
-    if nTrials > 1 & rows.at[nTrials-2,'Reward'] == "yes":   
+    if nTrials > 1 and rows.at[nTrials-2,'Reward'] == "yes":   
         # now check if the subject stayed with the same spatial choice
         if rows.at[nTrials-1,'Choice'] == rows.at[nTrials-2,'Choice']: 
             trial_type = "success"

@@ -8,12 +8,13 @@ from Functions.set_Beta_prior import set_priors
 from Functions.update_strategy_posterior_probability import update_strategy_posterior_probability
 from Functions.Summaries_of_Beta_distribution import summaries_of_Beta_Distribution
 from Functions.plotSessionStructure import plotSessionStructure
+from Functions.interpolate_null_trials import interpolate_null_trials
 
 # initiate TestData variable so that rat 2 testdata can be loaded
 TestData = pd.read_csv('data.csv')
 
 #  choose strategies to evaluate: subset shown in Figure 1
-strategies = ['go_left','go_right']
+strategies = ['go_left','go_right','go_cued','win_stay_spatial','lose_shift_cued','lose_shift_spatial']
 
 # set prior
 prior_type = 'Uniform' #set prior type
@@ -27,7 +28,7 @@ Output_collection = {} # empty dict in which to store dataframes
 event_totals = {}   # empty dict to store totals of events for each strategy
 # initialise dataframes
 for index_strategy in range(len(strategies)):
-    Output_collection[strategies[index_strategy]] =  pd.DataFrame(columns = ['Alpha', 'Beta', 'MAPprobability', 'Precision'])  # empty Dataframe to input data into
+    Output_collection[strategies[index_strategy]] =  pd.DataFrame(columns = ['Alpha', 'Beta','MAPprobability', 'Precision','Alpha_interpolated', 'Beta_interpolated','MAPprobability_interpolated', 'Precision_interpolated'])  # empty Dataframe to input data into
     event_totals[strategies[index_strategy]] = {}; # create empty dict for this strategy
     event_totals[strategies[index_strategy]]['success_total'] = 0;
     event_totals[strategies[index_strategy]]['failure_total'] = 0;
@@ -49,25 +50,53 @@ for trial in range(len(TestData)):
                
        MAPprobability = summaries_of_Beta_Distribution(Alpha, Beta, 'MAP')
        precision = summaries_of_Beta_Distribution(Alpha, Beta, 'precision')
-    
-       # store results  - dynamically-defined dataframe...
-       new_row = {'Alpha':Alpha, 'Beta':Beta, 'MAPprobability':MAPprobability, 'Precision':precision}     # create new row for dataframe as a dict
-       new_df= pd.DataFrame([new_row])   # have to convert to dataframe to use concat!!
-       Output_collection[strategies[index_strategy]] = pd.concat([Output_collection[strategies[index_strategy]], new_df], ignore_index=True)       # add new row to dataframe
+      
+              
+       #%% interpolate null trials
+       this_trials_data= {'Alpha':Alpha, 'Beta':Beta, 'MAPprobability':MAPprobability, 'Precision':precision}     # create dict of current data to pass
+       if trial > 0:
+           previous_trials_data = Output_collection[strategies[index_strategy]].iloc[trial-1] 
+       else:
+           previous_trials_data = Output_collection[strategies[index_strategy]]  # pass empty dataframe
+           
+       new_row_of_data = interpolate_null_trials(this_trials_data,previous_trials_data,alpha0,beta0)
        
+       # store results  - dynamically-defined dataframe...
+       new_df= pd.DataFrame([new_row_of_data])   # have to convert to dataframe to use concat!!
+       Output_collection[strategies[index_strategy]] = pd.concat([Output_collection[strategies[index_strategy]], new_df], ignore_index=True)       # add new row to dataframe
+      
+      
 #%% plot results
 no_Trials = np.size(TestData.TrialIndex)
 
-# plotting time series of MAPprobability
+# plotting time series of MAPprobability for Rule Strategies
 plt.figure(figsize=(10, 5))
 plt.plot(Output_collection['go_left'].MAPprobability, linewidth=0.75)  # plots the time series
-plt.axis([0, no_Trials, 0, 1.25])  # establishes axis limits
+plt.plot(Output_collection['go_right'].MAPprobability, linewidth=0.75, color=(0.4, 0.8, 0.5))  # plots the time series
+plt.plot(Output_collection['go_cued'].MAPprobability, linewidth=0.75, color=(0.8,0.6,0.5))  # plots the time series
+plt.axis([0, no_Trials, 0, 1.25])  # establishes axis limits 
 plt.xlabel('Trials'), plt.ylabel('P(Strategy)')  # labelling the axis
-plt.axhline(y=0.5, color='firebrick', linestyle='--', linewidth=0.75,
-            label="Chance")  # shows the line at which Chance is exceeded
+plt.axhline(y=0.5, color='darkgrey', linewidth=0.75, label="Chance")  # shows the line at which Chance is exceeded
 
 plotSessionStructure(TestData)
-
 plt.show()       
+
+# plotting Precision for the same three strategies (precision identical for go_left and go_right)
+plt.figure(figsize=(10, 5))
+plt.plot(Output_collection['go_left'].Precision, linewidth=0.75)  # plots the time series
+plt.plot(Output_collection['go_cued'].Precision, linewidth=0.75, color=(0.8,0.6,0.5))  # plots the time series
+plt.xlabel('Trials'), plt.ylabel('Precision')  # labelling the axis
+plt.show()      
        
-       
+
+# plotting MAP probability for some exploratory strategies - use interpolated values
+plt.figure(figsize=(10, 5))
+plt.plot(Output_collection['lose_shift_cued'].MAPprobability_interpolated, linewidth=0.75, color=(1, 0.1, 0.6))  # plots the time series
+plt.plot(Output_collection['lose_shift_spatial'].MAPprobability_interpolated, linewidth=0.75, color=(0.8, 0.6, 0.5))  # plots the time series
+plt.plot(Output_collection['win_stay_spatial'].MAPprobability_interpolated, linewidth=0.75, color=(0.4,0.8,0.5))  # plots the time series
+plt.axis([0, no_Trials, 0, 1.25])  # establishes axis limits 
+plt.xlabel('Trials'), plt.ylabel('P(Strategy)')  # labelling the axis
+plt.axhline(y=0.5, color='darkgrey', linewidth=0.75, label="Chance")  # shows the line at which Chance is exceeded
+
+plotSessionStructure(TestData)
+plt.show()  
