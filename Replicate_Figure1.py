@@ -41,6 +41,7 @@ for trial in range(len(TestData)):
     
     rows_of_data = TestData.iloc[0:trial+1]     # select all rows of data up to the curren trial; is trial+1 as dataframe includes colu   
      
+    print(rows_of_data)
    #%% 
     for index_strategy in range(len(strategies)):
        # run current strategy model on data up to current trial 
