@@ -20,5 +20,5 @@ Two scripts demonstrate the main use of the Toolbox:
 - data.csv: data from Rat 2 of the Peyrache et al 2009 (Nat Neurosci) study of Y-maze performance (see pre-print for details)
 
 ## Folders
-- Functions/: the set of functions that implement the Bayesian algorithm, handle multiple strategies, and summarise the Beta distribution (MAP estimate, precision etc)
+- Functions/: the set of functions that implement the Bayesian algorithm and summarise the Beta distribution (MAP estimate, precision etc)
 
