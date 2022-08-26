@@ -1,0 +1,14 @@
+Choice,CuePosition,Reward,go_left,go_right,go_cued,go_uncued,sticky,alternate,win_stay_spatial,win_stay_cued,lose_shift_spatial,lose_shift_cued
+left,left,yes,success,failure,success,failure,null,null,null,null,null,null
+left,right,yes,success,failure,failure,success,success,failure,success,failure,null,null
+left,left,no,success,failure,success,failure,success,failure,success,failure,null,null
+left,right,no,success,failure,failure,success,success,failure,null,null,failure,success
+right,left,yes,failure,success,failure,success,failure,success,null,null,success,failure
+right,right,yes,failure,success,success,failure,success,failure,success,failure,null,null
+right,left,no,failure,success,failure,success,success,failure,success,failure,null,null
+right,right,no,failure,success,success,failure,success,failure,null,null,failure,success
+right,right,yes,failure,success,success,failure,success,failure,null,null,failure,failure
+left,right,yes,success,failure,failure,success,failure,success,failure,failure,null,null
+right,left,yes,failure,success,failure,success,failure,success,failure,success,null,null
+right,left,no,failure,success,failure,success,success,failure,success,success,null,null
+left,left,no,success,failure,success,failure,failure,success,null,null,success,success

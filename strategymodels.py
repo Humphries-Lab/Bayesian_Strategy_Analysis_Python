@@ -84,10 +84,13 @@ def alternate(rows):
     # checks if the subject made a different choice on this trial from the previous obe
     nTrials = len(rows)
      # "at" selects the value at the row/column location in the dataframe
-    if nTrials > 1 and rows.at[nTrials-1,'Choice'] != rows.at[nTrials-2,'Choice']:      # check the current trial's choice
+    if nTrials == 1:
+        trial_type = "null" # undefined on first trial
+    elif nTrials > 1 and rows.at[nTrials-1,'Choice'] != rows.at[nTrials-2,'Choice']:      # check the current trial's choice
         trial_type = "success"
-    else:
+    else: 
         trial_type = "failure"
+        
     return trial_type
 
 
@@ -134,7 +137,9 @@ def sticky(rows):
     # checks if the subject made the same choice on this trial as the previous one
     nTrials = len(rows)
      # "at" selects the value at the row/column location in the dataframe
-    if nTrials > 1 and rows.at[nTrials-1,'Choice'] == rows.at[nTrials-2,'Choice']:      # check the current trial's choice
+    if nTrials == 1:
+         trial_type = "null" # undefined on first trial
+    elif nTrials > 1 and rows.at[nTrials-1,'Choice'] == rows.at[nTrials-2,'Choice']:      # check the current trial's choice
         trial_type = "success"
     else:
         trial_type = "failure"
@@ -143,7 +148,7 @@ def sticky(rows):
 
 
 def win_stay_cued(rows):
-    # checks if the subject made the same cued choice on this trial after being rewarded on the previous one
+    # checks if the subject made the same cue-driven choice on this trial after being rewarded on the previous one
     trial_type = "null"   # default is that this trial does not meet criterion for win-stay
     
     nTrials = len(rows)
