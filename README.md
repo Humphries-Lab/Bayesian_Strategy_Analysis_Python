@@ -22,3 +22,7 @@ Two scripts demonstrate the main use of the Toolbox:
 ## Folders
 - Functions/: the set of functions that implement the Bayesian algorithm and summarise the Beta distribution (MAP estimate, precision etc)
 
+# How do I use the toolbox with my data?
+1. Put your data that can be read into a DataFrame using Pandas. We use Pandas' "read_csv" function in our examples, which requires the data to be in CSV format - see any of the top-level scripts for examples. 
+2. Use Replicate_Figure1.py as a template. Make a copy (e.g. My_Strategy_Analysis.py). Edit that copy to load your data (in the format of Step 1) and select the strategies you want to apply (in the list "strategues = ['go_left',...,]); then run it and see the results
+3. Write your own strategy models: see the strategymodels.py module for examples and a template. All strategy model functions have the same input (rows of the DataFrame up to the current trial) and output (the trial type as a string). Then simply add the name of the new function to your list of strategies in your script. And run it!
