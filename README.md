@@ -2,11 +2,11 @@
 
 Python toolbox for Bayesian analysis of behavioural strategies on choice tasks
 
-(This is a Python port of https://github.com/Humphries-Lab/Bayesian_Strategy_Analysis_MATLAB)
+Pre-print: https://biorxiv.org/cgi/content/short/2022.08.30.505807v1
 
 Tested with: Python 3.9 onwards
 
-[reference to pre-print to go here]
+(This is a Python port of https://github.com/Humphries-Lab/Bayesian_Strategy_Analysis_MATLAB)
 
 ## Top-level scripts
 Two scripts demonstrate the main use of the Toolbox:
