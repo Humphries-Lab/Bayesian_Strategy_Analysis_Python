@@ -2,7 +2,7 @@
 
 Python toolbox for Bayesian analysis of behavioural strategies on choice tasks
 
-Pre-print: https://biorxiv.org/cgi/content/short/2022.08.30.505807v1
+Pre-print: https://doi.org/10.1101/2022.08.30.505807
 
 Tested with: Python 3.9 onwards
 
