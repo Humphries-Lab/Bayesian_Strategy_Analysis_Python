@@ -2,7 +2,7 @@
 
 Python toolbox for Bayesian analysis of behavioural strategies on choice tasks
 
-Pre-print: https://doi.org/10.1101/2022.08.30.505807
+Read the paper at eLife: https://doi.org/10.7554/eLife.86491
 
 Tested with: Python 3.9 onwards
 
@@ -31,3 +31,6 @@ Two scripts demonstrate the main use of the Toolbox:
 - Names and values of data variables: the supplied strategy models assume that the loaded dataset uses the following names and values for each variable: Choice ("left","right'), Reward ("yes","no"), CuePosition ("left","right"). 
 
 - Omissions: the supplied strategy functions assume the subject made a choice on each trial. If your data contain trials with omissions (e.g. the subject did not engage on that trial) then either (a) remove those trials from the dataset before using the strategy analysis on them, or (b) edit the code to handle how you coded the omissions in your data. For example, if you coded an omission as Choice = NaN, then assign any trial with Choice = NaN as a "null" trial-type for *every* strategy; the best place to do that would be in the top-level script -- an if/else that checked first whether the trial was an omission, and then only evaluated the trial-type for each strategy if it was not an omission.
+
+# Problems?
+- Raise an "Issue" here on the GitHub repository. In the "Issue" give the problem/bug you came across (and where) or the question you have about how to use the toolbox
