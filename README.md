@@ -1,8 +1,8 @@
-# Bayesian_Strategy_Analyisis_Python
+# StrategyTracker (Python)
 
-Python toolbox for Bayesian analysis of behavioural strategies on choice tasks
+Python toolbox for Bayesian tracking of behavioural strategies across trials on choice tasks
 
-Read the paper at eLife: https://doi.org/10.7554/eLife.86491
+Read the Strategy Tracker paper at eLife: https://doi.org/10.7554/eLife.86491
 
 Tested with: Python 3.9 onwards
 
